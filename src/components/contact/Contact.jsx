@@ -9,6 +9,9 @@ import Address from "./../../img/address.png"
 import Linkedin from "./../../img/linkedin.png"
 import Instagram from "./../../img/instagram.png"
 import Github from "./../../img/github.png"
+import Resume from "./../../img/resume.png"
+import Download from "./../../img/download.png"
+import ResumePDF from "./../../resume/Resume_AmanJaiswal_SDE2_Javascript.pdf"
 import { ThemeContext } from '../../context';
 import { COLOR_WHITE, COLOR_BLACK, COLOR_GREY, LINKEDIN_PROFILE_URL, INSTAGRAM_PROFILE_URL, GITHUB_PROFILE_URL } from "../../constant";
 
@@ -53,6 +56,12 @@ function Contact() {
                             Hyderabad, India
                         </div>
                         <div className="contact-info-item">
+                            <img src={Resume} alt="resume" className="contact-icon" />
+                            <a className="contact-icon-anchor" href={ResumePDF} target="_blank" rel="noreferrer" style={darkMode ? { color: COLOR_WHITE, textDecoration: "none" } : { color: COLOR_BLACK, textDecoration: "none" }}>
+                                Resume
+                            </a>
+                        </div>
+                        <div className="contact-info-item">
                             <a className="contact-icon-anchor" href={GITHUB_PROFILE_URL} target="_blank" rel="noreferrer">
                                 <img src={Github} alt="github" className="contact-icon" />
                             </a>
@@ -78,7 +87,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

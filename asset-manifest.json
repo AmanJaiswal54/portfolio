@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bac88844.css",
+    "main.js": "/portfolio/static/js/main.1bcf27ed.js",
+    "static/media/screenshotApi.png": "/portfolio/static/media/screenshotApi.31cd8c8be8c5ec5eed80.png",
+    "static/media/instagram.png": "/portfolio/static/media/instagram.db2612bd586501d9ed3e.png",
+    "static/media/optusMobile.png": "/portfolio/static/media/optusMobile.710b08f2832bdb49e334.png",
+    "static/media/Profile_Picture.jpg": "/portfolio/static/media/Profile_Picture.aefdbf2015a35baa1186.jpg",
+    "static/media/singtelAccessories.png": "/portfolio/static/media/singtelAccessories.ea0a8400ca2ac999ffac.png",
+    "static/media/aboutMe.jpg": "/portfolio/static/media/aboutMe.e7a21b850e3531edd46c.jpg",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.b1bebb391a157454d569.png",
+    "static/media/address.png": "/portfolio/static/media/address.36ba426c5122d479d4b7.png",
+    "static/media/gmail.png": "/portfolio/static/media/gmail.12b10d0fd2aa0b8d922c.png",
+    "static/media/moon.png": "/portfolio/static/media/moon.049f34b67087f17a9942.png",
+    "index.html": "/portfolio/index.html",
+    "main.bac88844.css.map": "/portfolio/static/css/main.bac88844.css.map",
+    "main.1bcf27ed.js.map": "/portfolio/static/js/main.1bcf27ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac88844.css",
+    "static/js/main.1bcf27ed.js"
+  ]
+}

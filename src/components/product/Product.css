@@ -1,0 +1,51 @@
+.product {
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.p-browser {
+    height: 20px;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+
+.p-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.p-circle.red {
+    background-color: red;
+}
+.p-circle.yellow {
+    background-color: yellow;
+}
+.p-circle.green {
+    background-color: rgb(29, 238, 29);
+}
+
+.p-img {
+    width: 100%;
+    height: 200%;
+    transition: all 10s ease;
+}
+
+.p-img:hover {
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        width: 40%;
+        height: 20vh;
+    }
+}

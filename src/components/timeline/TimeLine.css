@@ -1,0 +1,30 @@
+.timeline {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    /* padding: 20px 0; */
+}
+
+.timeline-container {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeline-container::after {
+    background-color: #59b256;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+    .timeline {
+        display: none;
+    }
+}

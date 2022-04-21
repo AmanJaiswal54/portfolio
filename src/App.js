@@ -6,7 +6,8 @@ import Toggle from "./components/toggle/Toggle";
 import TimeLine from "./components/timeline/TimeLine";
 import { ThemeContext } from "./context";
 import { COLOR_WHITE, COLOR_BLACK } from "./constant";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ReactGA from "react-ga";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -16,6 +17,11 @@ function App() {
       return !prevDarkMode;
     });
   };
+
+  useEffect(() => {
+    ReactGA.initialize("G-H46F7F3QT8");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div

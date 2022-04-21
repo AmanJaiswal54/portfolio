@@ -1,6 +1,7 @@
 import { useState, useRef, useContext } from 'react';
 
 import emailjs from '@emailjs/browser';
+import ReactGA from 'react-ga';
 
 import './Contact.css';
 import Phone from "./../../img/phone.png"
@@ -22,6 +23,11 @@ function Contact() {
 
     const submitHandle = (event) => {
         event.preventDefault();
+        ReactGA.event({
+            category: 'button',
+            action: 'click on send email',
+            label: 'click on send email'
+        });
         emailjs.sendForm('service_a2mb2vu', 'template_spg42d6', formRef.current, 'y5nz7e0nwmSApalWj')
             .then((result) => {
                 console.log(result.text);
@@ -29,11 +35,20 @@ function Contact() {
                 for (let i = 0; i < formRef.current.length; i++) {
                     formRef.current[i].value = '';
                 }
-                alert('mail sent');
+                // alert('mail sent');
                 setDone(true);
             }, (error) => {
                 console.log(error.text);
             });
+    }
+
+    const downloadResumeHandler = () => {
+        ReactGA.event({
+            category: 'button',
+            action: 'click on download resume',
+            label: 'click on download resume'
+        });
+        window.open(ResumePDF, "_blank");
     }
 
     return (
@@ -56,12 +71,6 @@ function Contact() {
                             Hyderabad, India
                         </div>
                         <div className="contact-info-item">
-                            <img src={Resume} alt="resume" className="contact-icon" />
-                            <a className="contact-icon-anchor" href={ResumePDF} target="_blank" rel="noreferrer" style={darkMode ? { color: COLOR_WHITE, textDecoration: "none" } : { color: COLOR_BLACK, textDecoration: "none" }}>
-                                Resume
-                            </a>
-                        </div>
-                        <div className="contact-info-item">
                             <a className="contact-icon-anchor" href={GITHUB_PROFILE_URL} target="_blank" rel="noreferrer">
                                 <img src={Github} alt="github" className="contact-icon" />
                             </a>
@@ -71,6 +80,9 @@ function Contact() {
                             <a className="contact-icon-anchor" href={LINKEDIN_PROFILE_URL} target="_blank" rel="noreferrer">
                                 <img src={Linkedin} alt="linkedin" className="contact-icon" />
                             </a>
+                        </div>
+                        <div className="contact-info-item">
+
                         </div>
                     </div>
                 </div>
@@ -84,6 +96,11 @@ function Contact() {
                         <input type="text" style={darkMode ? { color: COLOR_WHITE, backgroundColor: COLOR_GREY } : { color: COLOR_BLACK, backgroundColor: COLOR_WHITE }} placeholder="Email" name="user_email" />
                         <textarea rows={5} style={darkMode ? { color: COLOR_WHITE, backgroundColor: COLOR_GREY } : { color: COLOR_BLACK, backgroundColor: COLOR_WHITE }} placeholder="Message" name="message" />
                         <button>Submit</button>
+                        <button onClick={downloadResumeHandler} style={{ marginLeft: "20px", position: "relative" }}>
+                            {/* <img src={Download} alt="resume" className="contact-icon" style={{ position: 'absolute', top: '13px', right: "80px" }} /> */}
+                            {/* <img src={Resume} alt="resume" className="contact-icon" /> */}
+                            <span>Resume</span>
+                        </button>
                     </form>
                 </div>
             </div>

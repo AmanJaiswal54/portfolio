@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bac88844.css",
-    "main.js": "/portfolio/static/js/main.fb5ca891.js",
+    "main.js": "/portfolio/static/js/main.873f4719.js",
     "static/media/screenshotApi.png": "/portfolio/static/media/screenshotApi.31cd8c8be8c5ec5eed80.png",
     "static/media/instagram.png": "/portfolio/static/media/instagram.db2612bd586501d9ed3e.png",
     "static/media/optusMobile.png": "/portfolio/static/media/optusMobile.710b08f2832bdb49e334.png",
@@ -16,10 +16,10 @@
     "static/media/moon.png": "/portfolio/static/media/moon.049f34b67087f17a9942.png",
     "index.html": "/portfolio/index.html",
     "main.bac88844.css.map": "/portfolio/static/css/main.bac88844.css.map",
-    "main.fb5ca891.js.map": "/portfolio/static/js/main.fb5ca891.js.map"
+    "main.873f4719.js.map": "/portfolio/static/js/main.873f4719.js.map"
   },
   "entrypoints": [
     "static/css/main.bac88844.css",
-    "static/js/main.fb5ca891.js"
+    "static/js/main.873f4719.js"
   ]
 }
